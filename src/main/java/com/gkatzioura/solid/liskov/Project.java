@@ -4,10 +4,10 @@ import java.util.List;
 
 public class Project {
 
-    public void start(List<Employee> employees) {
+    public void start(List<WorkingEmployee> workingEmployees) {
 
-        for(Employee employee:employees) {
-            employee.work();
+        for(WorkingEmployee workingEmployee:workingEmployees) {
+            workingEmployee.work();
         }
     }
 }

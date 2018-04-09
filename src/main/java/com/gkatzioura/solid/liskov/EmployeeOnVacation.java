@@ -1,9 +1,9 @@
 package com.gkatzioura.solid.liskov;
 
-public class EmployeeOnVacation extends Employee {
+public class EmployeeOnVacation implements NonWorkingEmployee {
 
     @Override
-    public void work() {
-        throw new IllegalArgumentException("Employees on vacation should not work");
+    public void relax() {
+
     }
 }

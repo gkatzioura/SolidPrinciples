@@ -7,9 +7,8 @@ public class EmployeeMain {
 
     public static void main(String args[]) {
 
-        List<Employee> employees = new ArrayList<>();
-        employees.add(new EmployeeOnVacation());
-        employees.add(new Employee());
+        List<WorkingEmployee> employees = new ArrayList<>();
+        employees.add(new WorkingEmployeeImpl());
 
         Project project = new Project();
         project.start(employees);
